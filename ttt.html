@@ -111,9 +111,15 @@
                 Kevin nu a fost niciodata casatorit si nu are copii </li>
             </ul>
             </nav>
+
+
         </section>
     </section>
 
+    
+
+
+    
     <section class="col-3 col-s-12">
             <h3>  Notes:  </h3>
     <article class="aside">
@@ -127,13 +133,53 @@
         <p>8.9/10</p>
     </article>
     </section>
-
-
+    
     </main>
+
+    <div id="mainform">
+        <div class="innerdiv">
+        <!-- Required Div Starts Here -->
+        <h2>Vrei sa afli ultimele noutati despre Kevin Spacey?</h2>
+        <form action='#' id="myForm" method='post' name="myForm">
+        <h3>Completeaza-ti datele si te vom tine la curent!</h3>
+        <table>
+        <tr>
+        <td>Username</td>
+        <td><input id='username1' name='username' onblur="validate('username', this.value)" type='text'></td>
+        <td>
+        <div id='username'></div>
+        </td>
+        </tr>
+        <tr>
+        <td>Password</td>
+        <td><input id='password1' name='password' onblur="validate('password', this.value)" type='password'></td>
+        <td>
+        <div id='password'></div>
+        </td>
+        </tr>
+        <tr>
+        <td>Email</td>
+        <td><input id='email1' name='email' onblur="validate('email', this.value)" type='text'></td>
+        <td>
+        <div id='email'></div>
+        </td>
+        </tr>
+        <tr>
+        <td>website</td>
+        <td><input id='website1' name='website' onblur="validate('website', this.value)" type='text'></td>
+        <td>
+        <div id='website'></div>
+        </td>
+        </tr>
+        </table>
+        <input onclick="checkForm()" type='button' value='Submit'>
+        </form>
+        </div>
+
 
     <footer class="footer">
     <p>Articol creat de Nanu Madalina-Elena</p>
     </footer>
-
+    <script src="scriptJS.js"></script>
     </body>
     </html>
